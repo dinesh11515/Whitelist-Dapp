@@ -1,10 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
 import { useState,useRef,useEffect} from 'react'
 import styles from '../styles/Home.module.css';
-import {ethers,providers,Contract} from "ethers";
+import {providers,Contract} from "ethers";
 import Web3Modal from "web3modal";
-import {abi,WHITELIST_CONTRACT_ADDRESS} from "../constants/index"
+import {abi,WHITELIST_CONTRACT_ADDRESS} from "../constants/index";
 
 export default function Home() {
   const [joined,setJoined] = useState(false);
